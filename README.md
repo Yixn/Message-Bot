@@ -1,5 +1,5 @@
 # message-bot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+>
 
 ## Installation
 
@@ -7,12 +7,26 @@ Clone this repository, and run:
 ```sh
 $ npm install
 ```
+Change api_key,token and port in config.js
 
 ## Usage
 
 ```js
 $ npm run bot
 ```
+The bot is now listening to http post requests to http://0.0.0.0:#{port}/messages/send
+
+Content-Type: application/x-www-form-urlencoded;
+Parameters
+users
+-> An array of user ids
+message
+-> The Message that should be sent to all users
+--> Any Occurence of %?username?% will be replaced with the User name
+api_key
+-> obv
+
+
 ## License
 
 Apache-2.0 © [Daniel Samer](rltracker.pro)
