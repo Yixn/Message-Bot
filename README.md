@@ -14,11 +14,12 @@ Change api_key,token and port in config.js
 ```js
 $ npm run bot
 ```
-The bot is now listening to http post requests to http://0.0.0.0:#{port}/messages/send
 
+## Webapp
+The bot is now listening to http post requests to http://0.0.0.0:#{port}/messages/send
 Content-Type: application/x-www-form-urlencoded;
 
-Parameters
+## Parameters
 users
 -> An array of user ids
 message
@@ -27,7 +28,7 @@ message
 api_key
 -> obv
 
-Response:
+## Response:
 Json Format
 Array of all users with the job status (success/error)
 [["176412791010230283","success"],["109844143798255616","error"]]
