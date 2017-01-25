@@ -16,21 +16,21 @@ $ npm run bot
 ```
 
 ## Webapp
-The bot is now listening to http post requests to http://0.0.0.0:#{port}/messages/send
-Content-Type: application/x-www-form-urlencoded;
-
-## Parameters
-users
--> An array of user ids
-message
--> The Message that should be sent to all users
---> Any Occurence of %?username?% will be replaced with the User name
-api_key
--> obv
+The bot is now listening to http post requests to http://0.0.0.0:#{port}/messages/send  
+Content-Type: application/x-www-form-urlencoded;  
+  
+## Parameters  
+users  
+-> An array of user ids  
+message  
+-> The Message that should be sent to all users  
+--> Any Occurence of %?username?% will be replaced with the User name  
+api_key  
+-> obv  
 
 ## Response:
-Json Format
-Array of all users with the job status (success/error)
+Json Format  
+Array of all users with the job status (success/error)  
 [["176412791010230283","success"],["109844143798255616","error"]]
 
 
